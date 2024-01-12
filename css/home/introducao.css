@@ -1,0 +1,79 @@
+.introducao-bg {
+    background: var(--cor-p5) url('../../cellusarquivos/dec/bottom-right-p.svg') no-repeat bottom 40px right 40px;
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+
+.introducao-conteudo {
+    align-self: end;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.introducao h1 {
+    margin-bottom: 32px;
+    max-width: 12ch;
+}
+
+
+
+.introducao p {
+    margin-bottom: 4px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+@media (max-width: 1200px){
+    .introducao h1 {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media (max-width: 800px){
+
+    .introducao-bg {
+        background: var(--cor-p5);
+    }
+    .introducao-conteudo {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .introducao{
+        grid-template-columns: 1fr;
+        padding: 0px;
+        
+    }
+
+    .introducao-conteudo{
+        display: flex;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        align-items: center;
+    }
+
+    .introducao-conteudo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .introducao img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}

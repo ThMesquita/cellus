@@ -6,17 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cellu's Restaurante</title>
         <meta name="description" content="Descubra o sabor autêntico da comida caseira no Cellu's Restaurante. Uma experiência gastronômica única, onde cada prato é preparado com carinho e ingredientes frescos. Venha desfrutar da tradição culinária em um ambiente acolhedor e familiar.">
-        
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+        <link rel="preload" href="./css/style.min.css" as="style">
+        <link rel="stylesheet" href="./css/style.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <script>document.documentElement.classList.add('js');</script>
     </head>
     <body>
         <header class="header-bg">
-            <div class="header">
+            <div class="header container">
                 <a href="./">
-                    <img src="./cellusarquivos/marca.svg" alt="Cellu's">
+                    <img src="./cellusarquivos/marca.svg" width="132" height="32" alt="Cellu's">
                 </a>
                 <nav aria-label="primaria">
-                    <ul class="header-menu">
+                    <ul class="header-menu cor-0 font-1-m">
                         <li><a href="./cardapio.html">Cardápio</a></li>
                         <li><a href="./localizacao.html">Localização</a></li>
                         <li><a href="./contato.html">Contato</a></li>
@@ -24,5 +31,124 @@
                 </nav>
             </div>
         </header>
+        <main class="introducao-bg">
+            <div class="introducao">
+                <picture data-anime = "200" class="fadeInLeft"><img src="./cellusarquivos/img-otm/prato-introducao.png"  width="1576" height="968" alt="Bife grelhado"></picture>
+                <div class="introducao-conteudo">
+                    <h1 class="font-1-xxl cor-0 fadeInDown" data-anime = "400">Pratos à partir de <span class="cor-s2">23,90</span></h1>
+                    <div>
+                        <p class="font-2-l fadeInDown" data-anime = "600">Segunda a Sábado</p>
+                        <p class="font-2-l fadeInDown" data-anime = "600">10:00h às 15:00h</p>
+                    </div>
+                </div>  
+            </div>
+        </main>
+        <article class="whatsapp"> 
+            <a href="https://wa.me/5511975772080" target="_blank"><img src="./cellusarquivos/img-otm/logo-whats.png" width="500" height="500" alt="Whatsapp" class="whatsapp-logo"></a>
+        </article>
+        <article class="opcoes-lista">
+            <h2 class="font-1-xxl container fadeInLeft" data-anime = "200">Nossas Opções</h2>
+            <ul class="fadeInUp" data-anime = "400">
+                <li>
+                    <a href="./cardapio.html">
+                        <img src="./cellusarquivos/img-otm/a-vontade.jpg" width="920" height="1040" alt="À-vontade">
+                        <h3 class="font-1-xl">À-vontade</h3>
+                        <span class="font-2-m cor-8">R$ 43,90</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./cardapio.html">
+                        <img src="./cellusarquivos/img-otm/pratos-marmitex.jpg" width="920" height="1040" alt="Pratos e marmitex">
+                        <h3 class="font-1-xl">Pratos e marmitex </h3>
+                        <span class="font-2-m cor-8">à Partir de R$ 20,00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./cardapio.html">
+                        <img src="./cellusarquivos/img-otm/Kilo.jpg" width="920" height="1040" alt="Prato por kilo">
+                        <h3 class="font-1-xl">Kilo</h3>
+                        <span class="font-2-m cor-8">à Partir de R$ 62,90</span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <article class="comida-bg">
+            <div class="comida container">
+                <div class="comida-conteudo">
+                    <span class="font-2-l-b cor-t0">COMIDA CASEIRA</span>
+                    <h2 class="font-1-xxl cor-0">Ingredientes selecionados e frescos<span class="cor-s1">!</span></h2>
+                    <p class="font-2-l cor-t0">Em nossa cozinha, valorizamos a qualidade desde o início. Trabalhamos incansavelmente para oferecer uma experiência gastronômica única, começando pelos ingredientes. Cada prato é cuidadosamente preparado com ingredientes selecionados a dedo, garantindo frescor e sabor inigualáveis.</p>
+                    <a class="botao" href="./cardapio.html">Ver cardápio</a>
+                </div>
+                <div class="comida-img">
+                    <img src="./cellusarquivos/img-otm/ingredientes.jpg" width="1400" height="2240" alt="ingredientes">
+                </div>
+            </div>
+        </article>
+        <article class="localizacao-bg">
+            <div class="localizacao container">
+                <div class="localizacao-conteudo">
+                    <ul class="localizacao-lista">
+                        <li>
+                            <div class="localizacao-titulo">
+                                <div class="localizacao-pin">
+                                  <img src="./cellusarquivos/icones/pin.svg" width="24" height="24" alt="Pin">
+                                </div>
+                             <h2 class="font-1-xxl cor-11">Localização</h2>
+                            </div>
+                            <p class="font-2-l cor-8"><a href="https://www.google.com/maps?q=CELLUS+RESTAURANTE+SAO+LUIZ&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQLhhA0gEIMzMyN2owajGoAgCwAgA&um=1&ie=UTF-8">Rua Paulo Eduardo Xavier de Tolêdo, 197 - São Luiz
+                                Itu - SP</a></p>
+                        </li>
+                        <li>
+                            <div class="localizacao-titulo">
+                              <div class="localizacao-phone">
+                                 <img src="./cellusarquivos/icones/phone.svg" width="24" height="24" alt="Phone">
+                              </div>
+                              <h2 class="font-1-xxl cor-11">Contato</h2>
+                            </div>
+                            <p class="font-2-l cor-8"><a href="tel:+5511975772080">11 97577-2080</a> | <a href="tel:+551140255917">11 4025-5917</a></p>
+                        </li>
+                    </ul>
+                    <a href="https://www.google.com/maps?q=CELLUS+RESTAURANTE+SAO+LUIZ&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQLhhA0gEIMzMyN2owajGoAgCwAgA&um=1&ie=UTF-8">
+                        <div class="localizacao-img">
+                            <img src="./cellusarquivos/img-otm/Local.jpg" width="2320" height="1200" alt="Localização Rua Paulo Eduardo Xavier de Tolêdo, 197 - São Luiz Itu - SP">
+                        </div>  
+                    </a>
+                </div>  
+            </div>
+        </article>
+        <footer class="footer-bg">
+            <div class="footer container">
+                <img src="./cellusarquivos/marca.svg" width="132" height="32" alt="Cellu's">
+                <div class="footer-contato">
+                    <h3 class="font-2-l-b cor-0">Contato</h3>
+                    <ul class="cor-t0 font-2-m">
+                        <li><a href="tel:+5511975772080">+55 11 97577-2080</a></li>
+                        <li><a href="tel:+551140255917">+55 11 4025-5917</a></li>
+                    </ul>
+                    <div class="footer-redes">
+                        <a href="https://www.instagram.com/cellusrestaurante/" target="_blank">
+                            <img src="./cellusarquivos/redes/instagram-w.svg" width="32" height="32" alt="Instagram">
+                        </a>
+                        <a href="https://wa.me/5511975772080" target="_blank">
+                            <img src="./cellusarquivos/redes/whatsapp-w.svg" width="32" height="32" alt="Whatsapp">
+                        </a>
+                        <a href="https://www.facebook.com/cellusrestaurante/" target="_blank">
+                            <img src="./cellusarquivos/redes/facebook-w.svg" width="32" height="32" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-localizacao">
+                    <h3 class="font-2-l-b cor-0">Endereço</h3>
+                    <ul class="cor-t0 font-2-m">
+                        <li><a href="https://www.google.com/maps?q=CELLUS+RESTAURANTE+SAO+LUIZ&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQLhhA0gEIMzMyN2owajGoAgCwAgA&um=1&ie=UTF-8">Rua Paulo Eduardo Xavier de Tolêdo, 197 - São Luiz
+                            Itu - SP</a></li>
+                    </ul>
+                </div>
+                <p class="footer-copy font-2-m cor-t1">Cellu`s ©  Alguns Direitos Reservados.</p>
+            </div>
+        </footer>
+        <script src="./js/plugins/simple-anime.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
