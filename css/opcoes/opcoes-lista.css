@@ -4,20 +4,23 @@
 
 .opcoes-lista h2 {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .opcoes-lista ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
-    padding: 0px 20px 20px 20px;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-x: auto;
+    justify-content: center;
 }
 
 .opcoes-lista li {
-    min-width: 280px;
+    border: 2px solid var(--cor-p2);
+    color: var(--cor-11);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    border-radius: 4px;
+    padding: 20px;
 }
 
 .opcoes-lista a {
@@ -39,7 +42,7 @@
     display: inline-block;
     height: 8px;
     width: 12px;
-    background-color: var(--cor-p3);
+    background-color: var(--cor-p2);
     margin-right: 8px;
     border-radius: 2px;
     transition: 0.2s;
@@ -63,4 +66,18 @@
     .opcoes-lista ul {
         gap: 20px;
     }
+
+    .opcoes-lista li {
+        width: 220px;
+        padding: 12px;
+    }
+
+    .opcoes-lista span {
+        font-size: 0.8125rem;
+    }
+
+    .opcoes-lista h3 {
+        margin-bottom: 0px;
+    }
+
 }

@@ -109,10 +109,10 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 0px;
-        justify-items: center;
-        align-items: center;
+        justify-content: center;
         gap: 16px;
     }
+
 
     .cardapio-selecao a::before,
     .cardapio-dias a:hover:before {
